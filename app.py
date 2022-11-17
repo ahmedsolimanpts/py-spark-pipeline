@@ -6,9 +6,9 @@ import datetime as dt
 
 SOURCE_FOLDER = "Source Data/*.csv"
 
-def read_csv_file(FILE,SPARk):
+def read_csv_file(FILE):
     try:
-        df = SPARk.read.csv(FILE,header=True,inferSchema=True)
+        df = spark.read.csv(FILE,header=True,inferSchema=True)
         Create_Logs('Done Reading File')
         return df
 
@@ -17,12 +17,19 @@ def read_csv_file(FILE,SPARk):
 
 def Read_all_csv_data(Folder):
     fiels = gb.glob(Folder)
+    df = None
     if len(fiels) == 1 :
         Create_Logs('Start Reading Files ...')
-        df = read_csv_file(fiels,spark)
+        df = read_csv_file(fiels)
         Create_Logs('Finish Reading csv File')
         Create_Logs('Data Is Ready To Use')
         return df
+    elif len(fiels) >1:
+        df = read_csv_file(Folder)
+        print(df.count())
+        Create_Logs('Finish Reading All csv Files ')
+        return df
+
     else:
         Create_Logs('Cant Read File')
 
@@ -32,11 +39,11 @@ def Create_Logs(message):
     print(message)
     if gb.glob(LOG_FILE):
         with open(LOG_FILE,'a') as f:
-            f.write(str(dt.datetime.now())+',    '+message+'\n')
+            f.write(str(dt.datetime.now())+';    '+message+';\n')
     else:
         with open(LOG_FILE,'w') as f:
-            f.write('date,    '+'message\n')
-            f.write(str(dt.datetime.now())+',    '+message+'\n')
+            f.write('date;    '+'message;\n')
+            f.write(str(dt.datetime.now())+';    '+message+';\n')
 
 def Fast_EDA(DF):
     Create_Logs('Start Fast EDA')
@@ -57,6 +64,8 @@ def clean_duplicate(DF):
     if DF.count() > DF.dropDuplicates().count():
         print('There Is Duplicate')
         DF = DF.dropDuplicates()
+        print('Drop Duplicate Sucess')
+        print(DF.count())
         Create_Logs('Finish check & Drop Duplicates')
         return DF
     Create_Logs('Finish check and NO Duplicates Found')

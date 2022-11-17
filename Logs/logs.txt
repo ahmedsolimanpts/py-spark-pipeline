@@ -67,3 +67,41 @@ date,    message
 2022-11-16 11:32:44.869528,    Finish Fast EDA
 2022-11-16 11:32:44.904786,    Start check & Drop Duplicates
 2022-11-16 11:33:21.310397,    Finish check and NO Duplicates Found
+2022-11-17 10:37:35.821200,    Start Creating Session ...
+2022-11-17 10:37:55.508957,    Create Session Sucess
+2022-11-17 10:37:55.509463,    Start Reading Files ...
+2022-11-17 10:38:19.253767,    Done Reading File
+2022-11-17 10:38:19.253880,    Finish Reading csv File
+2022-11-17 10:38:19.253938,    Data Is Ready To Use
+2022-11-17 10:38:19.253997,    Start Fast EDA
+2022-11-17 10:39:10.940842,    Finish Fast EDA
+2022-11-17 10:39:10.940981,    Start check & Drop Duplicates
+2022-11-17 10:39:48.507643,    Finish check and NO Duplicates Found
+2022-11-17 10:40:51.277367,    Start Creating Session ...
+2022-11-17 10:41:12.159837,    Create Session Sucess
+2022-11-17 10:43:07.910027,    Start Creating Session ...
+2022-11-17 10:43:16.299419,    Create Session Sucess
+2022-11-17 10:43:16.300068,    Start Reading File 0 ...
+2022-11-17 10:43:41.464364,    Done Reading File
+2022-11-17 10:43:41.464499,    Finish Reading csv File 0
+2022-11-17 10:43:41.464576,    Start Appending csv File 0
+2022-11-17 10:44:23.981592,    Start Creating Session ...
+2022-11-17 10:44:33.105001,    Create Session Sucess
+2022-11-17 10:44:33.105644,    Start Reading File 0 ...
+2022-11-17 10:44:46.053119,    Done Reading File
+2022-11-17 10:44:46.053247,    Finish Reading csv File 0
+2022-11-17 10:44:46.053339,    Start Appending csv File 0
+2022-11-17 10:45:40.380623,    Start Creating Session ...
+2022-11-17 10:45:48.644267,    Create Session Sucess
+2022-11-17 10:45:48.644744,    Start Reading File 0 ...
+2022-11-17 10:46:02.105691,    Done Reading File
+2022-11-17 10:46:02.105922,    Finish Reading csv File 0
+2022-11-17 10:46:02.106017,    Start Appending csv File 0
+2022-11-17 10:48:42.679667,    Start Creating Session ...
+2022-11-17 10:48:50.682008,    Create Session Sucess
+2022-11-17 10:49:12.949206,    Done Reading File
+2022-11-17 10:49:16.181480,    Finish Reading All csv Files 
+2022-11-17 10:49:16.181631,    Start Fast EDA
+2022-11-17 10:50:37.840490,    Finish Fast EDA
+2022-11-17 10:50:37.866314,    Start check & Drop Duplicates
+2022-11-17 10:52:45.579827,    Finish check & Drop Duplicates
