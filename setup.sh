@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "$(ls)"
+pip3 install -r requierments.txt
 
