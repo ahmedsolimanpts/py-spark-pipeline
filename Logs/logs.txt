@@ -105,3 +105,10 @@ date,    message
 2022-11-17 10:50:37.840490,    Finish Fast EDA
 2022-11-17 10:50:37.866314,    Start check & Drop Duplicates
 2022-11-17 10:52:45.579827,    Finish check & Drop Duplicates
+2022-11-18 10:29:57.374647;    Start Creating Session ...;
+2022-11-18 10:30:17.086111;    Create Session Sucess;
+2022-11-18 10:30:17.086657;    Start Reading Files ...;
+2022-11-18 10:30:37.110589;    Done Reading File;
+2022-11-18 10:30:37.110717;    Finish Reading csv File;
+2022-11-18 10:30:37.110810;    Data Is Ready To Use;
+2022-11-18 10:30:37.110900;    Start Fast EDA;

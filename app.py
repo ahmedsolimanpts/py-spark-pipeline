@@ -73,6 +73,7 @@ def clean_duplicate(DF):
 if __name__ == "__main__":
     Columns_Name = ['step', 'type', 'amount', 'nameOrig', 'oldbalanceOrg', 'newbalanceOrig', 'nameDest', 'oldbalanceDest',
      'newbalanceDest', 'isFraud', 'isFlaggedFraud']
+
     print('-'*50)
     Create_Logs('Start Creating Session ...')
     spark = SparkSession.builder.appName('MY_PIPE_LINE').getOrCreate()
